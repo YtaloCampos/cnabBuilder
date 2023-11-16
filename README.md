@@ -34,5 +34,5 @@ Opções:
   -a, --archive      caminho do arquivo Cnab                 [string] [required]
 
 Exemplos:
-  cnabRows.js -f 21 -t 34 -s p  lista a linha e campo que from e to do cnab
+  cnabRows.js -f 21 -t 34 -s p -n "NomeEmpresa" -a ./caminho/do/seu/arquivo.cnab
 ```
