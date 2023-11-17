@@ -13,7 +13,7 @@ const optionsYargs = yargs(process.argv.slice(2))
   .option("t", { alias: "to", describe: "posição final de pesquisa da linha do Cnab", type: "number", demandOption: true })
   .option("s", { alias: "segmento", describe: "tipo de segmento", type: "string" })
   .option("n", { alias: "companyName", describe: "nome da empresa de pesquisa da linha do Cnab", type: "string" })
-  .option("a", { alias: "archive", describe: "caminho do arquivo Cnab", type: "string" })
+  .option("a", { alias: "archive", describe: "caminho do arquivo Cnab", type: "string", demandOption: true })
   .check(argv => {
     if (!argv.companyName && !argv.segmento) {
       throw new Error('A opção "segmento" é obrigatória se "companyName" não for fornecido.');
